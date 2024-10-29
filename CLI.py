@@ -2,14 +2,14 @@ import tkinter as tk
 from tkinter import messagebox
 
 class Book:
-    def _init_(self, title, author, isbn):
+    def __init__(self, title, author, isbn):
         self.title = title
         self.author = author
         self.isbn = isbn
         self.issued = False  # Tracks if the book is issued
 
 class Library:
-    def _init_(self, root):
+    def __init__(self, root):
         self.root = root
         self.root.title("Library Management System")
         self.root.geometry("500x600")
